@@ -30,8 +30,15 @@
         font-size: 130%;
       }
 
+      a:active {
+        color: grey;
+      }
+
       img.logo {
         width: 400px;
+      }
+      img.logo:active {
+        background-color: black;
       }
 
       a.works {
@@ -51,6 +58,13 @@
         font-family: "Satoshi", sans-serif;
         margin-left: 90px;
       }
+      .email {
+        display: inline;
+      }
+      .ogo {
+        display: inline;
+        margin-left: 0px;
+      }
     </style>
   </head>
   <body>
@@ -60,9 +74,22 @@
     /></a>
     <a class="contact" href="about.html">ABOUT.</a>
 
-    <h1>Contact</h1>
+    <div class="wholebar">
+      <h1>Contact</h1>
 
-    <p>instagram <a href="instagram.com"> @luvdxzmond</a></p>
-    <a href="instagram.com"> Insta</a>
+      <p>
+        instagram
+        <a href="https://www.instagram.com/luvdxzmond/" target="_blank">
+          @luvdxzmond</a
+        >
+      </p>
+
+      <p>
+        github <a href="https://github.com/Wafflefries-137">@Wafflefries-137</a>
+      </p>
+
+      <p class="email">email:</p>
+      <p class="ogo">ogoladesmond62@gmail.com</p>
+    </div>
   </body>
 </html>
