@@ -3,6 +3,7 @@
   <head>
     <meta name="keywords" content="HTML, CSS" />
     <meta name="description" content="" />
+
     <title>Desmond's Portfolio</title>
 
     <link
@@ -21,25 +22,27 @@
       body {
         background-image: url(Gradient.png);
 
-        background-size: 1250px;
+        background-size: contain;
         background-color: black;
       }
       img {
-        width: 300px;
+        width: 97vw;
         border-radius: 10px;
         object-fit: fill;
       }
 
-      @media (min-width: 600px) {
+      @media (min-width: 800px) {
         img.moodboard {
           width: 1250px;
         }
-
-        div.menu {
-          font-size: 300%;
-        }
       }
 
+      div.wholebar {
+        padding-left: 10vw;
+        padding-right: 50px;
+        font-size: 2vh;
+        padding-bottom: 0px;
+      }
       p.this {
         margin-top: 50px;
         margin-bottom: -30px;
@@ -50,41 +53,39 @@
         font-weight: 400;
         font-style: bold;
 
-        margin-bottom: -10px;
-        margin-left: 200px;
-        font-size: 350%;
+        margin-top: 35px;
+        margin-bottom: 3px;
+        margin-left: 0px;
+        font-size: 5vw;
         color: white;
       }
 
       p {
-        margin-left: 200px;
-        font-size: 120%;
+        margin-left: 0px;
         font-family: "Satoshi", sans-serif;
         color: white;
       }
+      p.this {
+        font-size: 1.5vw;
+      }
 
       p.info {
-        margin-bottom: -30px;
+        margin-top: 3px;
+        margin-bottom: 20px;
 
         font-family: "Abril Fatface", serif;
         font-weight: 300;
         font-style: normal;
 
-        font-size: 200%;
-        color: grey;
-      }
-      p.graph {
-        font-family: "Abril Fatface", serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 200%;
+        font-size: 3vw;
         color: grey;
       }
 
       div.MyInfo {
         font-family: "Satoshi", sans-serif;
         margin-bottom: 0px;
-        font-size: 100%;
+        font-size: 2.5vh;
+        padding-bottom: 0px;
       }
 
       p.Observe {
@@ -106,16 +107,19 @@
 
       a.works {
         padding: 30px;
+        font-size: 2.5vh;
       }
 
       a.about {
         padding: 20px;
+        font-size: 2.5vh;
       }
       a.contact {
         padding-right: 30px;
+        font-size: 2.5vh;
       }
       div.menu {
-        font-size: 110%;
+        font-size: 3vh;
         padding-top: 10px;
         padding-bottom: 0px;
       }
@@ -153,7 +157,7 @@
         font-family: "Satoshi", sans-serif;
 
         width: 400px;
-        display: inline-block;
+        display: block;
         margin-left: 0px;
         color: #e2bbe9;
         float: right;
@@ -162,7 +166,8 @@
       div.bottom {
         float: center;
         justify-content: center;
-        font-size: 90%;
+
+        font-size: 2.5vh;
       }
     </style>
   </head>
@@ -183,9 +188,8 @@
       </div>
 
       <div class="bar2">
-        <p class="info">INFORMATION SECURITY NOVICE.</p>
-        <p class="graph">
-          GRAPHIC DESIGNER. <br />
+        <p class="info">
+          INFORMATION SECURITY NOVICE.<br />GRAPHIC DESIGNER. <br />
           WEB DEVELOPER.
         </p>
       </div>
@@ -212,17 +216,6 @@
         capabilities
       </p>
     </div>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <p class="Observe"></p>
-    <img
-      class="moodboard"
-      src="Index images/kusuo again.png"
-      alt="An image of an anime mood board "
-    />
-    <p align="center" class="Desc">A creative <em>mood board</em> by me</p>
+    <img src="Index images/kusuo.png" alt="" />
   </body>
 </html>
