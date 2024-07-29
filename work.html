@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My work</title>
 
     <link
@@ -16,22 +18,29 @@
     />
 
     <style>
+      .rights {
+        color: gray;
+        font-weight: 200;
+        font-family: "Satoshi", sans-serif;
+        text-decoration: none;
+        font-size: 0.7rem;
+      }
       div.menu {
-        display: inline-block;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 2px;
+        padding-right: 2px;
 
         display: flex;
         justify-content: center;
       }
       div.container {
-        padding-left: 60px;
+        padding-left: 0px;
+        margin-left: 49px;
       }
       p {
         color: white;
         font-family: "Abril Fatface", serif;
         font-weight: 100;
-        font-size: 500%;
+        font-size: 2rem;
       }
       body {
         background-color: black;
@@ -41,26 +50,20 @@
         width: 30vw;
       }
 
-      a.about {
-        margin-left: 0px;
+      p.music {
+        margin-top: 5px;
       }
 
       h1 {
         color: white;
         font-family: "Abril Fatface", serif;
         font-weight: 100;
-        font-size: 150%;
+        font-size: 1.5rem;
         margin-left: 60px;
       }
 
-      h2 {
-        color: white;
-        font-family: "Abril Fatface", serif;
-        font-weight: 100;
-        font-size: 150%;
-      }
       img {
-        width: 27vw;
+        width: 21rem;
         border-radius: 10;
         padding: 10px;
       }
@@ -70,7 +73,16 @@
         font-weight: 200;
         font-family: "Abril Fatface", serif;
         text-decoration: none;
-        font-size: 2vw;
+      }
+
+      a.contact {
+        font-size: 1rem;
+        padding: 50px;
+      }
+
+      a.about {
+        font-size: 1rem;
+        padding: 50px;
       }
       a:active {
         color: grey;
@@ -88,7 +100,7 @@
     </div>
     <h1>My Work.</h1>
     <div class="container">
-      <p align="center">Music Posters.</p>
+      <p class="music" align="center">Music Posters.</p>
       <img src="Works images/A NU KARUN.png" alt="" />
       <img src="Works images/IN HERE.png" alt="" />
       <img src="Works images/NOBODY ELSE.png" alt="" />
@@ -110,4 +122,5 @@
     </div>
     <h3>Frontend app design.</h3>
   </body>
+  <p align="center" class="rights">2024 Desmond Ogola</p>
 </html>
