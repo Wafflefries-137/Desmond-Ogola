@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My work</title>
 
     <link
@@ -18,32 +16,40 @@
     />
 
     <style>
+      div.menu {
+        display: inline-block;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        display: flex;
+        justify-content: center;
+      }
       div.container {
-        padding-left: 40px;
+        padding-left: 60px;
       }
       p {
         color: white;
         font-family: "Abril Fatface", serif;
         font-weight: 100;
-        font-size: 130%;
+        font-size: 500%;
       }
       body {
         background-color: black;
       }
 
       img.homelogo {
-        width: 400px;
+        width: 30vw;
       }
 
       a.about {
-        margin-left: 281px;
+        margin-left: 0px;
       }
 
       h1 {
         color: white;
         font-family: "Abril Fatface", serif;
         font-weight: 100;
-        font-size: 180%;
+        font-size: 150%;
         margin-left: 60px;
       }
 
@@ -51,12 +57,12 @@
         color: white;
         font-family: "Abril Fatface", serif;
         font-weight: 100;
-        font-size: 130%;
+        font-size: 150%;
       }
       img {
-        width: 300px;
+        width: 27vw;
         border-radius: 10;
-        padding: 40px;
+        padding: 10px;
       }
 
       a {
@@ -64,7 +70,7 @@
         font-weight: 200;
         font-family: "Abril Fatface", serif;
         text-decoration: none;
-        font-size: 130%;
+        font-size: 2vw;
       }
       a:active {
         color: grey;
@@ -73,12 +79,13 @@
   </head>
 
   <body>
-    <a class="about" href="about.html">ABOUT.</a>
-    <a href="./"
-      ><img class="homelogo" src="Home Image/desmond dark.png" alt=""
-    /></a>
-    <a class="contact" href="contact.html">CONTACT.</a>
-
+    <div class="menu">
+      <a class="about" href="about.html">ABOUT.</a>
+      <a href="./"
+        ><img class="homelogo" src="Home Image/desmond dark.png" alt=""
+      /></a>
+      <a class="contact" href="contact.html">CONTACT.</a>
+    </div>
     <h1>My Work.</h1>
     <div class="container">
       <p align="center">Music Posters.</p>
@@ -91,7 +98,7 @@
       <br />
       <br />
 
-      <h2 align="center">Stranger Things Posters.</h2>
+      <p align="center">Stranger Things Posters.</p>
       <img src="Works images/ELEVEN STRANGER THINGS.png" alt="" />
       <img src="Works images/ELEVEN STRANGER THINGS V2.png" alt="" />
       <img src="Works images/STRANGER THINGS CYCLING-1.png" alt="" />
