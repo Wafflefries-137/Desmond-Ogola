@@ -31,15 +31,23 @@
         text-decoration: none;
         font-size: 0.7rem;
         background-color: black;
-        padding: 90px;
+
         margin-top: 0px;
       }
 
       body {
         background-image: url(Gradient.png);
-
-        background-size: 500vw;
+        width: 100%;
+        background-size: 200vw;
         background-color: black;
+        margin: auto;
+        background-repeat: no-repeat;
+        padding: 0px;
+      }
+      .kusuoimg {
+        width: auto;
+        display: flex;
+        justify-content: center;
       }
       img {
         width: 97vw;
@@ -47,6 +55,9 @@
         object-fit: fill;
         margin-bottom: 0px;
         padding-bottom: 0px;
+
+        display: flex;
+        justify-self: center;
       }
 
       @media (min-width: 1000px) {
@@ -59,20 +70,46 @@
           background-repeat: no-repeat;
         }
       }
+      @media (max-width: 1023px) {
+        .sun {
+          display: none;
+        }
+        .sunn {
+          display: none;
+        }
+        .info {
+          width: 20px;
+        }
+
+        .wholebar {
+          display: none;
+        }
+      }
+
+      @media (max-width: 414px) {
+        body {
+          background-image: url(background2.png);
+          background-size: 200%;
+        }
+      }
 
       div.wholebar {
-        padding-left: 13vw;
-        padding-right: 10px;
-        font-size: 1vh;
+        width: auto;
+        padding-right: 0px;
+        margin-left: 10vw;
         padding-bottom: 0px;
+        display: inline-block;
       }
       p.this {
+        width: auto;
+
         margin-top: 50px;
         margin-bottom: -30px;
         font-family: "Satoshi", sans-serif;
         font-size: 1rem;
       }
       h1 {
+        width: auto;
         font-family: "Abril Fatface", serif;
         font-weight: 400;
         font-style: bold;
@@ -91,6 +128,8 @@
       }
 
       p.info {
+        width: auto;
+
         margin-top: 3px;
         margin-bottom: 20px;
 
@@ -103,15 +142,32 @@
       }
 
       div.MyInfo {
+        width: auto;
+
         font-family: "Satoshi", sans-serif;
         margin-bottom: 0px;
         font-size: 1rem;
         padding-bottom: 0px;
       }
 
+      .sun {
+        float: right;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        margin-right: 9rem;
+      }
+
+      .sunn {
+        width: 350px;
+      }
       p.Observe {
         display: flex;
         justify-content: center;
+      }
+      .up {
+        margin: 0px;
       }
 
       em {
@@ -136,14 +192,15 @@
         font-size: 1rem;
       }
       a.contact {
-        padding-right: 20px;
+        padding-right: 3vw;
         font-size: 1rem;
       }
       div.menu {
         padding-top: 20px;
         padding-bottom: 0px;
         border: 2px;
-        border-color: white;
+
+        width: auto;
       }
       div.rightmenu {
         float: right;
@@ -169,7 +226,7 @@
         padding-left: 30px;
         font-family: "Satoshi", sans-serif;
 
-        width: 400px;
+        width: 300px;
         display: inline-block;
         margin-left: 0px;
         color: #fa4501;
@@ -181,8 +238,8 @@
         font-family: "Satoshi", sans-serif;
 
         width: 400px;
-        display: block;
-        margin-left: 0px;
+
+        margin-left: 2px;
         color: #fa4501;
         float: right;
       }
@@ -197,56 +254,67 @@
     </style>
   </head>
   <body>
-    <div class="menu">
-      <a class="works" href="work.html">MY WORK.</a>
+    <div class="orange">
+      <div class="menu">
+        <a class="works" href="work.html">MY WORK.</a>
 
-      <div class="rightmenu">
-        <a class="about" href="about.html">ABOUT.</a>
-        <a class="contact" href="contact.html">CONTACT.</a>
+        <div class="rightmenu">
+          <a class="about" href="about.html">ABOUT.</a>
+          <a class="contact" href="contact.html">CONTACT.</a>
+        </div>
       </div>
-    </div>
+      <div class="up">
+        <div class="wholebar">
+          <div class="bar1">
+            <p class="this">This is</p>
+            <h1>DESMOND.</h1>
+          </div>
 
-    <div class="wholebar">
-      <div class="bar1">
-        <p class="this">This is</p>
-        <h1>DESMOND.</h1>
+          <div class="bar2">
+            <p class="info">
+              INFORMATION SECURITY NOVICE.<br />GRAPHIC DESIGNER. <br />
+              WEB DEVELOPER.
+            </p>
+          </div>
+
+          <div class="MyInfo">
+            <p>
+              Hello, welcome to my portfolio. <br />Here I will mostly focus on
+              things pertaining to <br />graphic design and web development for
+              the moment. <br />
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
+        <div class="sun">
+          <img class="sunn" src="/Index images/sun.png" alt="" />
+        </div>
       </div>
 
-      <div class="bar2">
-        <p class="info">
-          INFORMATION SECURITY NOVICE.<br />GRAPHIC DESIGNER. <br />
-          WEB DEVELOPER.
+      <div class="bottom">
+        <p class="left">
+          Successfully implementing robust <br />
+          security measures with swift response <br />
+          to incidences
+        </p>
+
+        <p align="right" class="right">
+          Collection of my projects and <br />
+          achievements reflecting my skills and <br />
+          capabilities
         </p>
       </div>
-
-      <div class="MyInfo">
-        <p>
-          Hello, welcome to my portfolio. <br />Here I will mostly focus on
-          things pertaining to <br />graphic design and web development for the
-          moment. <br />
-          <br />
-          <br />
-        </p>
-      </div>
-    </div>
-
-    <div class="bottom">
-      <p class="left">
-        Successfully implementing robust <br />
-        security measures with swift response <br />
-        to incidences
-      </p>
-
-      <p align="right" class="right">
-        Collection of my projects and <br />
-        achievements reflecting my skills and <br />
-        capabilities
-      </p>
     </div>
     <br />
     <br />
     <br />
-    <img src="Index images/kusuo mood board.png" alt="" />
+    <br />
+    <br />
+    <br />
+    <div class="kusuoimg">
+      <img src="Index images/kusuo mood board.png" alt="" />
+    </div>
   </body>
   <p align="center" class="rights">2024 Desmond Ogola</p>
 </html>

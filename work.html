@@ -18,6 +18,25 @@
     />
     <link rel="shortcut icon" href="rast.png" type="image/x-icon" />
     <style>
+      @media (max-width: 414px) {
+        img {
+          object-fit: fill;
+          width: 80%;
+          margin: auto;
+          display: block;
+          border-radius: 10;
+          padding: 10px;
+        }
+      }
+      @media (min-width: 1000px) {
+        img {
+          width: 20%;
+          border-radius: 10;
+          padding: 10px;
+          margin-left: 95px;
+        }
+      }
+
       .rights {
         color: gray;
         font-weight: 200;
@@ -28,19 +47,19 @@
       div.menu {
         padding-left: 2px;
         padding-right: 2px;
-
+        width: auto;
         display: flex;
         justify-content: center;
       }
       div.container {
         padding-left: 0px;
-        margin-left: 6rem;
+        margin-left: 0px;
       }
       p {
         color: white;
         font-family: "Abril Fatface", serif;
         font-weight: 100;
-        font-size: 2rem;
+        font-size: 1.3rem;
       }
       body {
         background-color: black;
@@ -58,12 +77,11 @@
         color: white;
         font-family: "Abril Fatface", serif;
         font-weight: 100;
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-left: 60px;
       }
 
       img {
-        width: 15rem;
         border-radius: 10;
         padding: 10px;
       }
@@ -77,12 +95,12 @@
 
       a.contact {
         font-size: 1rem;
-        padding: 50px;
+        margin-top: 6vw;
       }
 
       a.about {
         font-size: 1rem;
-        padding: 50px;
+        margin-top: 6vw;
       }
       a:active {
         color: grey;
@@ -100,8 +118,9 @@
       <a class="contact" href="contact.html">CONTACT.</a>
     </div>
     <h1>My Work.</h1>
+
+    <p class="music" align="center">Music Posters.</p>
     <div class="container">
-      <p class="music" align="center">Music Posters.</p>
       <img src="Works images/A NU KARUN.png" alt="" />
       <img src="Works images/IN HERE.png" alt="" />
       <img src="Works images/NOBODY ELSE.png" alt="" />
